@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let c of contacts">
+      {{c.name.givenName | json}}
+    </ion-item>
+  </ion-list>
+  <!--uncoment home.scss-->
+  <div id="map"></div>
+  <button ion-button color='danger'>Click Me</button>
+</ion-content>
